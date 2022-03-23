@@ -14,6 +14,7 @@ public class Musica {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	private String nome;
+	private String album;
 	private Genero genero;
 	private double duracao;
 	
@@ -34,6 +35,12 @@ public class Musica {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
+	public String getAlbum() {
+		return album;
+	}
+	public void setAlbum(String album) {
+		this.album = album;
+	}
 	public Genero getGenero() {
 		return genero;
 	}
@@ -52,10 +59,11 @@ public class Musica {
 	public void setArtista(Artista artista) {
 		this.artista = artista;
 	}
+	
 	@Override
 	public String toString() {
-		return "Musica [id=" + id + ", nome=" + nome + ", genero=" + genero + ", duracao=" + duracao + ", artista="
-				+ artista + "]";
+		return "Musica [id=" + id + ", nome=" + nome + ", album=" + album + ", genero=" + genero + ", duracao="
+				+ duracao + ", artista=" + artista + "]";
 	}
 	public Musica() {
 		super();
