@@ -4,6 +4,6 @@ public enum Genero {
 	
 	Rock,
 	Pop,
-	House
+	MPB
 
 }
