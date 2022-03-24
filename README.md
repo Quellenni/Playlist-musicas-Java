@@ -21,16 +21,13 @@ Nesse projeto foi desenvolvida uma Api em Java com Spring Boot para criação de
 
 ## 📝 :pencil:Desenvolvimento do Projeto
 
+O projeto está estruturado no padrão MVC com pacotes devidamente separados em Model, Controller e o pacote repository com as interfaces que possibilitam a manipulação de dados no banco.
+
 Foram utilizados Spring Framework para configurações do sistema, Spring data jpa para a persistência de dados e Springdoc-openapi para gerar documentação com Swagger.
 Para estabelecer a conexão com o banco de dados mysql utilizamos o Mysql connector Java. 
 
-Será necessário adicionar as seguintes dependências ao maven para a utilização dessa API:
 
-* _Spring Boot Starter_
-* _MySql Connector_
-* _Spring Boot Starter Web_
-* _SpringDoc OpenApi Ui_
-* _Spring Boot Data JPA_
+
 
 
 Para acessar a API documentada no Swagger foi utilizada a url :
